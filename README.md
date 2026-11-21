@@ -29,7 +29,7 @@ The full argument, including the constants $C_k$ and $V_k$ and the slicing in $b
 
 ## Verification
 
-With Python 3.10 or newer, run the following in a virtual environment. The zero centres used by the independent program were computed with FLINT and are checked again from sign changes. The certificates verify the finite inequalities in the written proof.
+With Python 3.10 or newer, run the following in a virtual environment. The zero centres used by the independent program were computed with FLINT and are checked again from sign changes. The certificates verify the finite inequalities in the written proof. The two programs implement the same written argument separately, so they share its analytic inputs, including the threshold theorem.
 
 ```sh
 python -m pip install -r requirements.txt
