@@ -1,8 +1,8 @@
 # The critical prime window stays positive at every scale
 
-Weighted sums of primes over a window from $y$ to $b^2y$ change behaviour at one exact dilation, $b_\ast\approx1.50342897722316$. Assuming the Riemann hypothesis (RH), this repository shows that the weighted prime sum stays strictly below its predicted size at every real scale $y>0$, for every dilation from $b_\ast$ up to $151/100$, including $b_\ast$ itself.
+Weighted sums of primes over a window from $y$ to $b^2y$ change behaviour at one exact dilation, $b_\ast\approx1.50342897722316$. Under the Riemann hypothesis (RH), for each fixed $b>b_\ast$ the sum stays below its predicted size for all sufficiently large $y$. Under RH and rational linear independence of the distinct positive ordinates of the nontrivial zeta zeros, for each fixed $1<b<b_\ast$ it is both above and below its predicted size at arbitrarily large $y$. Assuming RH, this repository shows that the weighted prime sum stays strictly below its predicted size at every real scale $y>0$, for every dilation from $b_\ast$ up to $151/100$, including $b_\ast$ itself.
 
-The threshold is the hard case. There the steady push from prime squares exactly cancels the worst the zeta zeros can do, so the usual square-root argument leaves no margin. The much smaller contribution of prime cubes, of size $y^{1/3}$, settles it. Under linear independence of the zero ordinates the normalised lower limit at $b_\ast$ is nonetheless zero.
+The threshold is the hard case. There the steady push from prime squares exactly cancels the worst the zeta zeros can do, so the usual square-root argument leaves no margin. For $\log y\ge96$ the much smaller contribution of prime cubes, of size $y^{1/3}$, settles it, and finite certificates cover the smaller scales. Under RH and rational linear independence of the distinct positive ordinates of the nontrivial zeta zeros, the normalised lower limit at $b_\ast$ is nonetheless zero.
 
 ## Statement
 
@@ -16,14 +16,14 @@ For $b>1$, $W_b(t)$ is $b(1-1/t)$ on $1<t\le b$, $b^2/t-1$ on $b<t<b^2$, and zer
 
 ## How the proof goes
 
-1. **Very large scales.** For $\log y\ge96$, Schoenfeld's RH bound applied to the prime squares and prime cubes gives $D_b(y)\ge(B_b-L_b)\sqrt y+0.035\thinspace y^{1/3}$, uniformly in $b$. This needs only $B_b\ge L_b$, which the threshold theorem supplies.
-2. **Everything below.** Three more ranges are each certified uniformly over the whole dilation interval.
+1. **Very large scales.** Under RH, for $\log y\ge96$, the explicit formula and Schoenfeld's RH bound applied to the prime squares and prime cubes give $D_b(y)\ge(B_b-L_b)\sqrt y+0.035\thinspace y^{1/3}$, uniformly for $1.50342\le b\le1.51$. On $b_\ast\le b\le151/100$ the threshold theorem gives $B_b\ge L_b$, which makes the right side positive.
+2. **Everything below.** Three more ranges are each certified uniformly for $b_\ast\le b\le151/100$.
 
 | Range of $y$ | Why the deficit is positive |
 |---|---|
 | $0<y\le10^5$ | Direct check of the prime sum over 128 dilation slices, at 1,778,200 positions in all, with margin above 0.055. The lower bound is concave between positions. |
 | $10^5\le y\le10^{10}$ | Prime squares give $Q_2(y)/\sqrt y>0.11$ on 34,728 intervals, against $L_b<0.13$. Retained terms from 64 zeros add more than 0.022. |
-| $10^{10}\le y\le e^{96}$ | Schoenfeld's bound loses less than 0.021 from the squares, and the same retained zeros add more than 0.022. |
+| $10^{10}\le y\le e^{96}$ | Schoenfeld's bound loses less than 0.021 from the squares, and the same retained zeros add more than 0.022. Since $L_b\le B_b$, this leaves a positive margin. |
 
 The full argument, including the constants $C_k$ and $V_k$ and the slicing in $b$, is in [PROOF.md](PROOF.md).
 
