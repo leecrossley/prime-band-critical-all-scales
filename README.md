@@ -2,6 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24410842.svg)](https://doi.org/10.5281/zenodo.24410842)
 
+This result is now maintained in [prime-window-all-widths](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-critical-all-scales). This repository is archived and keeps its releases and DOI.
+
 Weighted sums of primes over a window from $y$ to $b^2y$ change behaviour at one exact dilation, $b_\ast\approx1.50342897722316$. Under the Riemann hypothesis (RH), for each fixed $b>b_\ast$ the sum stays below its predicted size for all sufficiently large $y$. Under RH and rational linear independence of the distinct positive ordinates of the nontrivial zeta zeros, for each fixed $1<b<b_\ast$ it is both above and below its predicted size at arbitrarily large $y$. Assuming RH, this repository shows that the weighted prime sum stays strictly below its predicted size at every real scale $y>0$, for every dilation from $b_\ast$ up to $151/100$, including $b_\ast$ itself.
 
 The threshold is the hard case. There the steady push from prime squares exactly cancels the worst the zeta zeros can do, so the usual square-root argument leaves no margin. For $\log y\ge96$ the much smaller contribution of prime cubes, of size $y^{1/3}$, settles it, and finite certificates cover the smaller scales. Under RH and rational linear independence of the distinct positive ordinates of the nontrivial zeta zeros, the normalised lower limit at $b_\ast$ is nonetheless zero.
